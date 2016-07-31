@@ -1,0 +1,45 @@
+1）、为什么要学nodeJs?
+    1、它火
+    2、它强大，很多自动化工具都用它来开发的
+
+2）、nodeJs版本
+    偶数为稳定版本，
+    奇数为非稳定版本
+
+3）、安装：
+    1、官网下载
+    2、下一步..安装
+    3、cmd/gitbash, 输入 node -v
+    4、可以通过gitbash来执行Node命令
+
+4)、在gitbash命令行
+    1、输入node
+    2、输入: var a = 1; b = 1; function add(a,b){ return a+b }; console.log( add(a,b) ); 回车
+    3、输入window  报错
+    4、输入process  回车
+
+5）、
+    javascript天生就缺少一种模块管理机制来隔离实现不同功能
+    因此在javascript经常用命名空间的方式，把变量和函数限制在某一作用域内。
+    比如jquery里有很多属性和方法，直接是调用不了的，要通过$符号来调用。
+
+6)、模块的流程：
+    1、创建模块： student.js
+    2、暴露模块： export.add = add;
+    3、加载模块： var student = require('./studuent.js');
+    4、使用模块:  student.add("学生A");
+
+    详情看例子： schoolModel模块
+
+7）、Url网址解析方法
+    在gitbash里
+    输入node 回车
+    输入url 回车
+    输入url.parse("http://immoc.com:8080/couce/list?form=scott&&course=node#floor1")  回车
+    输入url.parse("http://immoc.com:8080/couce/list?form=scott&&course=node#floor1", true)  回车
+    输入url.parse("http://immoc.com:8080/couce/list?form=scott&&course=node#floor1", true, true)  回车
+    输入 url.resolve('http://imooc.com','/course/list'); 回车
+
+
+
+
